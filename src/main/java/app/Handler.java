@@ -52,5 +52,6 @@ public class Handler implements Closeable {
     @Override
     public void close(){
         readers.forEach(FileLinesReader::close);
+        System.out.println("Sorting completed");
     }
 }
