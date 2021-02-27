@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>bore</groupId>
-    <artifactId>cft-testing</artifactId>
+    <artifactId>sorter</artifactId>
     <version>1.0.1</version>
 
     <properties>
@@ -16,7 +16,7 @@
         <main-class-name>Main</main-class-name>
 
         <commons-cli.version>1.4</commons-cli.version>
-        <log4j.version>1.2.17</log4j.version>
+        <log4j.version>2.13.3</log4j.version>
     </properties>
 
     <dependencies>
@@ -27,10 +27,16 @@
         </dependency>
 
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
             <version>${log4j.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
